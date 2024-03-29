@@ -31,9 +31,9 @@ export default function LikeSection({ videodetail }) {
   },[subscri])
   return (
     <>
-      <div className="flex items-center mb-4">
-        <button className="bg-red-500 p-4 rounded-full" onClick={likeunlike}>like</button>
-        <span className="text-xl">{nolike} Likes</span>
+      <div className="flex items-center  bg-black ">
+        <button className="bg-red-500 p-4 rounded-lg text-white mt-4 ml-4 " onClick={likeunlike}>like</button>
+        <span className="text-xl text-white">{nolike} Likes</span>
       </div>
       <Toaster />
     </>

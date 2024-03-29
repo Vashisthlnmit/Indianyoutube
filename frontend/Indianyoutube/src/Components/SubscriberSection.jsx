@@ -17,12 +17,10 @@ export default function SubscriberSection({ videodetail }) {
     async function subscribe() {
         // const detail = { subscriberid: state1?._id, channelid: videodetail?.owner };
         const response = await dispatch(togglesubscription(data));
-        console.log(response);
         setUserSubscriptionStatus(response?.payload?.data?.success)
     }
     async function countsubscriber(){
         const response=await dispatch(nofsubscriber(videodetail?.owner));
-        console.log(response?.payload?.data?.message[0]?.totalsubscriber);
         setnosub(response?.payload?.data?.message[0]?.totalsubscriber)
     }
     useEffect(()=>{
@@ -40,9 +38,10 @@ export default function SubscriberSection({ videodetail }) {
                     {userSubscriptionStatus ? 'Subscribed' : 'Subscribe'}
                 </button>
             </div> */}
-            <h3>Hello welcome to subscription page</h3>
-            <h4>No of subscriber:{nosub}</h4>
+            <div className="bg-black">
+            <h4 className="text-white">No of subscriber:{nosub}</h4>
             {userSubscriptionStatus?<button className="bg-green-500 rounded-lg p-4" onClick={subscribe}>Unsubscribe</button>:<button  className="bg-red-500 rounded-lg p-4" onClick={subscribe}>Subscribe</button>}
+            </div>
         </>
     )
 }

@@ -10,7 +10,6 @@ export default function Signin() {
     async function pleasesignin(e) {
         e.preventDefault();
         const signindata = ({ email: data.email, password: data.password });
-        console.log(signindata);
         const pullingrequest = await dispatch(signin(signindata));
         navigate("/");
     }

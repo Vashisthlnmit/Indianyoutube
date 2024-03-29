@@ -59,6 +59,7 @@ export default function Header() {
                         <Link to="Signup">Sign up</Link> 
                         <Link to="Aboutus">About us</Link>
                         <Link to="Buildingblock">Buildingblock</Link>
+                        <Link to="/">Home</Link>
                         {state1.isitinto && <button className="bg-red-500" onClick={gettinglogout}>Logout</button>}
                         {state1.isitinto && <Link to="Mychannel">Mychannel</Link>}
                     </ul>

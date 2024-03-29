@@ -104,7 +104,7 @@ export default function Mychannel() {
                             >
                                 {/* Video Image */}
                                 <img src={uservideo?.videothumbnail} alt="Video Thumbnail" className="w-full rounded-lg shadow-lg" />
-                                <h2>{uservideo?.title}</h2>
+                                <h2 className="text-center text-white">{uservideo?.title}</h2>
                                 {/* Options Overlay */}
                                 {hoveredIndex === index && (
                                     <div className="absolute top-0 right-0 mt-2 mr-2 flex space-x-2">

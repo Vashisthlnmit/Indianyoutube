@@ -11,7 +11,6 @@ export default function Updateplaylist(){
     e.preventDefault();
     setdata({...data,playlistid:location.state});
     const response=await dispatch(updateplaylist(data));
-    console.log(response);
   };
 
   return (

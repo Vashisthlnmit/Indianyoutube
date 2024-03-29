@@ -82,7 +82,6 @@ export default function CommentSection({ videodetail }) {
                     {usercom?.map((cont, index) => (
                         <div key={index} onMouseEnter={() => handleMouseEnter(index)} onMouseLeave={() => handleMouseleave()} className="relative bg-red-500 mt-4">
                             <h3 className="text-white bg-red-500">{cont?.content}</h3>
-                            <h3 className="text-white bg-red-500">{cont?._id}</h3>
                             {hoveredIndex === index && (
                                 <div className="absolute top-0 right-0 mt-2 mr-2 flex space-x-2">
                                     <button className="bg-red-500 hover:bg-red-600 text-white py-1 px-2 rounded-md flex items-center justify-center" onClick={() => (deletionofcomment(cont?._id))}>

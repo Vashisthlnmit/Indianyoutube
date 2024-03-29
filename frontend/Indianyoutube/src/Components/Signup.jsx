@@ -4,8 +4,11 @@ import { FaRegUserCircle } from "react-icons/fa";
 import { useDispatch } from "react-redux";
 import { signup } from "../Redux/authentication";
 import toast,{Toaster} from "react-hot-toast";
+import {useNavigate} from "react-router-dom"
+
 export default function Signup() {
     const dispatch = useDispatch();
+    const navigate=useNavigate();
     const [data, setdata] = useState({ username: "", email: "", password: "", avatar: "" })
     const [preview, setpreview] = useState("");
     function imagepreview(e) {
@@ -26,10 +29,10 @@ export default function Signup() {
         form.append("email", data.email);
         form.append("password", data.password);
         form.append("avatar", data.avatar)
-        console.log(form);
         const response = await dispatch(signup(form));
-        console.log(response);
         setdata({ username: "", email: "", password: "", avatar: "", avatarurl: "" })
+        navigate("/Signin")
+
     }
     return (
         <section className="bg-black">

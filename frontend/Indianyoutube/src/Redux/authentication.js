@@ -31,7 +31,7 @@ const signup = createAsyncThunk('/signup', async (data) => {
         toast.promise(response, {
             loading: "please wait for moment account creation is in progess",
             success: (data)=>{
-                "we are signing up successfully"
+                return "you have successfully signed up"
             },
             error:(err)=>{
                 return err?.response?.data
@@ -69,7 +69,7 @@ const logout = createAsyncThunk('/logout', async () => {
         toast.promise(response, {
             loading: "please wait user is begining logging out",
             success: (data)=>{
-                "you are successfully logout"
+                return "you have successfully logout"
             },
             error:(err)=>{
                 return err?.response?.data
