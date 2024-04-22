@@ -4,7 +4,7 @@ export default function Errorpage(){
     const navigate=useNavigate();
     return(
         <>
-         <div className="w-full h-screen flex items-center justify-center bg-black">
+         <div className="w-full h-screen flex items-center justify-center" data-theme="forest">
            <div className="w-full">
              <p className="text-center  sm:text-xl md:text-6xl lg:text-5xl font-bold text-gray-300 tracking-wider ">404</p>
              <p className="text-center sm:text-xl md:text-6xl lg:text-5xl font-bold tracking-wider text-gray-500">Page not Found</p>

@@ -14,7 +14,7 @@ export default function Updateplaylist(){
   };
 
   return (
-    <div className="min-h-screen bg-black flex flex-col items-center justify-center">
+    <div className="min-h-screen flex flex-col items-center justify-center" data-theme="forest">
       <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md">
         <h2 className="text-2xl font-bold text-white mb-4">Update Title and Description</h2>
         <form onSubmit={handleSubmit}>

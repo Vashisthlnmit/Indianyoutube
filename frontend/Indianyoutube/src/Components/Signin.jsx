@@ -14,7 +14,7 @@ export default function Signin() {
         navigate("/");
     }
     return (
-        <section className="bg-black">
+        <section data-theme="forest">
             <div className="flex items-center justify-center px-4 py-10 sm:px-6 sm:py-16 lg:px-8 lg:py-24">
                 <div className="xl:mx-auto xl:w-full xl:max-w-sm 2xl:max-w-md">
                     <h2 className="text-center text-2xl font-bold leading-tight text-white">
@@ -59,9 +59,9 @@ export default function Signin() {
                             </div>
                             <div>
                                 <button
-                                    className="inline-flex w-full items-center justify-center rounded-md bg-white px-3.5 py-2.5 font-semibold leading-7 text-black hover:bg-white/80"
+                                   className="btn btn-active btn-accent block mx-auto w-2/3 text-white text-xl font-bold"
                                 >
-                                    Get started
+                                    Login
                                 </button>
                             </div>
                         </div>

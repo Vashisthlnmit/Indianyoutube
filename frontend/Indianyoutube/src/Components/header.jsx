@@ -42,7 +42,7 @@ export default function Header() {
     return (
         <>
             
-            <div className="drawer bg-black" >
+            <div className="drawer" data-theme="forest" >
                 <input id="my-drawer" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     {/* Page content here */}
@@ -55,7 +55,7 @@ export default function Header() {
                     </label>
                     <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
                          <IoIosCloseCircle className="w-10 h-10" onClick={close}/>
-                         <Link to="Signin">Signin</Link>
+                         {!state1.isitinto && <Link to="Signin">Signin</Link>}
                         <Link to="Signup">Sign up</Link> 
                         <Link to="Aboutus">About us</Link>
                         <Link to="Buildingblock">Buildingblock</Link>

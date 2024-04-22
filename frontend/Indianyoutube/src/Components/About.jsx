@@ -2,9 +2,9 @@ import React from "react";
 export default function Aboutus() {
     return (
         <>
-            <div className="bg-black min-h-screen">
+            <div className=" min-h-screen" data-theme="forest">
                 {/* Header */}
-                <header className="bg-black shadow-lg">
+                <header className=" shadow-lg">
                     <div className="container mx-auto px-6 py-3">
                         <h1 className="text-xl font-semibold text-white">About Us</h1>
                     </div>
@@ -30,12 +30,21 @@ export default function Aboutus() {
                         </div>
 
                         {/* Right Column */}
-                        <div className="lg:w-1/2 mt-10 lg:mt-0">
+                        {/* <div className="lg:w-1/2 mt-10 lg:mt-0">
                             <img
                                 src="https://media.istockphoto.com/id/1145887344/photo/online-live-video-marketing-concept.webp?b=1&s=170667a&w=0&k=20&c=awy0YB52aRxLbOJGA_Wbcg2miaXM3TKJeN3_rRTyJio="
                                 alt="Company"
                                 className="h-auto w-full object-cover object-center"
                             />
+                        </div> */}
+                        <div className="diff aspect-[16/9]">
+                            <div className="diff-item-1">
+                                <div className="bg-primary text-primary-content text-9xl font-black grid place-content-center">Indiube</div>
+                            </div>
+                            <div className="diff-item-2">
+                                <div className="bg-base-200 text-9xl font-black grid place-content-center">Indiube</div>
+                            </div>
+                            <div className="diff-resizer"></div>
                         </div>
                     </div>
                 </div>

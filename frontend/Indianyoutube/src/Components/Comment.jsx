@@ -56,7 +56,7 @@ export default function CommentSection({ videodetail }) {
     }, [])
     return (
         <>
-            <div className="bg-black min-h-screen flex flex-col text-white">
+            <div className=" min-h-screen flex flex-col text-white" data-theme="forest">
                 <h1 className="text-2xl font-bold mb-4">Total Comments: {nocomment}</h1>
 
                 {/* Form to add comments */}

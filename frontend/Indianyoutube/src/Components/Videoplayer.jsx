@@ -17,7 +17,7 @@ export default function Videoplayingsite({ videodetail }) {
     }, [])
     return (
         <>
-            <div className="bg-black flex flex-col  text-white">
+            <div className=" flex flex-col  text-white" data-theme="forest">
                 <video className="mt-2 block mx-auto" controls width="640" height="360" src={video?.videofile} controlsList="nodownload" autoPlay>
                 </video>
                 <div className="">

@@ -25,7 +25,7 @@ export default function Updatevideo() {
         setimageprev("");
     };
     return (
-        <div className="bg-black min-h-screen flex items-center justify-center">
+        <div className=" min-h-screen flex items-center justify-center" data-theme="forest">
             <div className="bg-gray-800 p-8 rounded-lg shadow-lg max-w-md w-full">
                 <h2 className="text-2xl font-bold text-white mb-4">Update Video Details</h2>
                 <form onSubmit={handleSubmit}>
@@ -44,7 +44,7 @@ export default function Updatevideo() {
                             id="image"
                             onChange={handleImageChange}
                             accept="image/*"
-                            className="w-full bg-gray-700 text-white rounded-md p-2 focus:outline-none focus:ring focus:border-blue-300"
+                            className="file-input file-input-bordered file-input-accent w-full max-w-xs"
                             required
                         />
                     </div>

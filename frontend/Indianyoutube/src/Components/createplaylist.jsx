@@ -27,7 +27,7 @@ export default function PlaylistDashboard() {
     }
     return (
         <>
-            <div className="bg-black h-screen">
+            <div className=" h-screen" data-theme="forest">
                 <div className="max-w-md mx-auto my-auto p-4 bg-white rounded shadow-md ">
                     <h1 className="text-2xl font-semibold mb-4">Create Playlist</h1>
                     <form onSubmit={handleSubmit} noValidate:true>

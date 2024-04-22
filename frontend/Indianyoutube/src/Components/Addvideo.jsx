@@ -47,7 +47,7 @@ export default function Addvideo() {
     }
     return (
         <>
-            <div className="h-screen bg-black">
+            <div className="h-screen" data-theme="forest">
                 <div className="container mx-auto p-4">
                     <h1 className="text-2xl font-bold mb-4 text-white">Add Video</h1>
                     <form onSubmit={handleSubmit} noValidate:true>

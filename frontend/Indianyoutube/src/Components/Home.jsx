@@ -17,25 +17,27 @@ export default function Home() {
     }, [])
     return (
         <>
-            <div className="h-screen bg-black">
+            <div className="min-h-screen" data-theme="forest">
                 <h2 className="text-center  text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-b from-indigo-500 via-purple-500 to-pink-500">Welcome to IndianYoutube</h2>
                 <div className="ml-72 flex mt-4  flex-wrap">
                     {video?.map((value) => (
                         <div
-                            className="relative cursor-pointer ml-2"
+                            className="relative cursor-pointer ml-2 flex flex-col"
                             onMouseEnter={() => setShowButton(true)}
                             onMouseLeave={() => setShowButton(false)}
                         >
-                            <img src={value?.videothumbnail} alt={value?.title} className="w-40 h-40 rounded-md" />
-                            {showButton && (
-                                <button
-                                    className=" bottom-2 right-2 mt-2 bg-white text-black px-2 py-1 rounded-md shadow"
-                                    onClick={() => (navigate("/Videoplaysite", { state: value }))}
-                                >
-                                    Watch Now
-                                </button>
-                            )}
-                            <p className="mt-2 text-sm text-center text-white">{value?.title}</p>
+                            <div className="flex flex-col justify-evenly h-80 w-80 mt-2">
+                                <img src={value?.videothumbnail} alt={value?.title} className="w-80 h-80 rounded-md mx-auto" />
+                                {showButton && (
+                                    <button
+                                        className="btn btn-neutral mt-2"
+                                        onClick={() => (navigate("/Videoplaysite", { state: value }))}
+                                    >
+                                        Watch Now
+                                    </button>
+                                )}
+                                <h3 className="mt-2 text-sm text-center text-white overflow-hidden">{value?.title}</h3>
+                            </div>
                         </div>
 
                     ))}

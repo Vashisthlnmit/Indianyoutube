@@ -38,7 +38,7 @@ export default function SubscriberSection({ videodetail }) {
                     {userSubscriptionStatus ? 'Subscribed' : 'Subscribe'}
                 </button>
             </div> */}
-            <div className="bg-black">
+            <div data-theme="forest">
             <h4 className="text-white">No of subscriber:{nosub}</h4>
             {userSubscriptionStatus?<button className="bg-green-500 rounded-lg p-4" onClick={subscribe}>Unsubscribe</button>:<button  className="bg-red-500 rounded-lg p-4" onClick={subscribe}>Subscribe</button>}
             </div>

@@ -8,7 +8,7 @@ export default function Buildingblock() {
     const navigate=useNavigate();
     return (
         <>
-            <div className="bg-black min-h-screen">
+            <div className=" min-h-screen" data-theme="forest">
                 <h2 className="text-white text-center text-2xl">Welcome to Building block of Indianyoutube</h2>
                 <div className="grid grid-cols-2 items-center justify-center mt-4">
                     <div className="flex items-center justify-center mt-4">
@@ -29,7 +29,7 @@ export default function Buildingblock() {
                     </div>
                 </div>
                 <div>
-                    <button className="bg-blue-500 w-1/2 block mx-auto mt-4 text-white p-4 rounded-lg font-bold text-xl" onClick={()=>(navigate(-1))}>Return back </button>
+                    <button className="btn btn-wide block mx-auto bg-green-700" onClick={()=>(navigate(-1))}>Return back </button>
                 </div>
             </div>
         </>
